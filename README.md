@@ -4,14 +4,6 @@ Monitore e visualize informações sobre o tempo de utilização do dispositivo.
 
 ![Preview](https://github.com/LucasLuccaCode/screen-usage-stats/blob/main/.github/preview.png)
 
-## Tecnologias utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Chart.js (para a criação de gráficos)
-- Tasker(para implementação funcional)
-
 ## Lista de recursos
 
 - Tempo total de uso do dispositivo.
@@ -23,29 +15,37 @@ Monitore e visualize informações sobre o tempo de utilização do dispositivo.
 
 ## Como usar
 
-### Versão web
+### 1. Versão Web
 
-1. Faça o download ou clone este repositório.
+Faça o download ou clone este repositório.
 
 ```bash
 git clone git@github.com:LucasLuccaCode/screen-usage-stats.git
 ```
 
-2. Acesse a pasta do projeto:
+Acesse a pasta do projeto:
 
 ```bash
 cd "screen-usage-stats"
 ```
 
-3. Abra o arquivo `index.html` em um navegador web.
+Abra o arquivo `index.html` em um navegador web.
 
-### Versão usando o Tasker
+### 2. Versão Tasker(Funcional)
 
 O Tasker é uma poderosa aplicação de automação para dispositivos Android, permitindo que os usuários personalizem e automatizem uma variedade de tarefas em seus smartphones.
 
 - Para instalar o aplicativo Tasker a partir da google play [clique aqui](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm).
-- Para baixar o projeto dessa aplição funcional para rodar no tasker [clique aqui](https://taskernet.com/shares/?user=AS35m8k%2FEQCE%2BJiPvkN1cJcjBE7Yh%2B%2Fa8zZeifxINYS7E94XnS26HrYYgsweBVnbf2VB9WJdrS5k&id=Project%3ASCREEN+USAGE+STATS).
+- Depois que instalar e configurar o Tasker, [clique aqui](https://taskernet.com/shares/?user=AS35m8k%2FEQCE%2BJiPvkN1cJcjBE7Yh%2B%2Fa8zZeifxINYS7E94XnS26HrYYgsweBVnbf2VB9WJdrS5k&id=Project%3ASCREEN+USAGE+STATS) para importar e executar a versão funcional desse projeto no Tasker.
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js (para a criação de gráficos)
+- Tasker(para implementação funcional)
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.-
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.
