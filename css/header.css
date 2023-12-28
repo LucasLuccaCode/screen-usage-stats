@@ -1,0 +1,218 @@
+.c-header {
+  width: 100%;
+  padding-bottom: var(--spacing-large);
+  background: var(--secondary-color);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  z-index: 100;
+}
+
+.c-header__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MENU */
+
+.c-header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(2rem + (var(--spacing-large) * 2));
+  height: calc(2rem + (var(--spacing-large) * 2));
+  z-index: 210;
+}
+
+.c-header__menu input {
+  display: none;
+}
+
+.c-header__menu span {
+  pointer-events: none;
+  position: relative;
+  width: 2rem;
+  height: .26rem;
+  border-radius: 50px;
+  background: var(--text-color);
+}
+
+.c-header__menu input:checked ~ span {
+  background: transparent;
+}
+
+.c-header__menu span::before,
+.c-header__menu span::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
+  background: var(--text-color);
+  transition: all .3s ease;
+}
+
+.c-header__menu span::before {
+  top: .6rem;
+}
+
+.c-header__menu input:checked ~ span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-header__menu span::after {
+  bottom: .6rem;
+}
+
+.c-header__menu input:checked ~ span::after {
+  top: 0;
+  transform: rotate(320deg);
+}
+
+/* SIDEBAR */
+
+.c-sidebar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  z-index: 200;
+}
+
+.c-sidebar__overlay.active {
+  display: block;
+}
+
+.c-sidebar {
+  padding: var(--spacing-large);
+  width: 70vw;
+  height: 100vh;
+  text-align: center;
+  background: var(--secondary-color);
+  transform: translateX(-70vw);
+  animation: slideLeft 0.2s ease-out forwards;
+  z-index: 103;
+}
+
+@keyframes slideLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* TITLE */
+
+.c-header h1 {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 2px;
+  color: var(--text-color);
+}
+
+.c-header strong {
+  color: var(--details-color);
+  margin-left: .4rem;
+}
+
+/* GREETING */
+
+.c-header__greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-header__greeting h2 {
+  font-size: 1.6rem;
+  margin-right: var(--spacing-medium);
+}
+
+/* THEME */
+
+.c-header__theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(2rem + (var(--spacing-large) * 2));
+  height: calc(2rem + (var(--spacing-large) * 2));
+}
+
+.c-header__theme__bg {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  width: 3rem;
+  height: 3rem;
+  background: #5f5f6f;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .05);
+}
+
+.c-header__theme.dark .c-header__theme__bg {
+  background: rgba(var(--base-rgb-details), .2);
+}
+
+.c-header__theme__icon {
+  pointer-events: none;
+  display: block;
+  font-size: 1.6rem;
+  
+  height: 1.5rem;
+  width: 1.5rem;
+  
+  background-image: url('../assets/sun.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-header__theme.dark .c-header__theme__icon {
+  background-image: url('../assets/moon.png');
+}
+
+/* SELECT LANGUAGE */
+
+.c-select__language__wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-select__language__wrapper::after {
+  content: "";
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, .05), transparent);
+  animation: gradientAnimation 1.4s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  100% {
+    left: 100%;
+  }
+}
+
+.c-select__language {
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  color: var(--text-color);
+  border: 1px solid rgba(var(--base-rgb-opaque), .02);
+  border-radius: .5rem;
+  outline: none;
+  background: rgba(var(--base-rgb-opaque), .03);
+  transition: border .3s ease;
+  overflow: hidden;
+}
+
+.c-select__language:active {
+  border-color: rgba(var(--base-rgb-opaque), .4);
+}

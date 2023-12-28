@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/help.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="/js/environment.js" defer></script>
+  <script src="/js/themes.js" defer></script>
+  <script src="/js/api.js" defer></script>
+  <script src="/js/help.js" defer></script>
+
+  <title>Screen Usage Stats Help</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="c-header">
+    <div class="max-width">
+      <div class="c-header__title">
+        <h1>SCREEN USAGE STATS<sup>%version</sup></h1>
+
+        <div class="c-select_language__wrapper">
+          <select class="c-select__language">
+            <option value="pt" selected>Portuguese</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">Franch</option>
+            <option value="ru">Russian</option>
+          </select>
+        </div>
+      </div>
+
+      <nav>
+        <!-- SHORTCUTS -->
+        <ul class="c-shortcuts">
+          <li>
+            <a href="#infos" class="active">
+              Informações
+            </a>
+          </li>
+          <li>
+            <a href="#description">
+              Descrição
+            </a>
+          </li>
+          <li>
+            <a href="#resources">
+              Recursos
+            </a>
+          </li>
+          <li>
+            <a href="#how-to-use">
+              Como usar
+            </a>
+          </li>
+          <li>
+            <a href="#tasks">
+              Tarefas
+            </a>
+          </li>
+          <li>
+            <a href="#profiles">
+              Perfis
+            </a>
+          </li>
+          <li>
+            <a href="#changelog" data-untranslatable>
+              Changelog
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="c-main max-width">
+    <section id="infos">
+      <h2>INFOS</h2>
+
+      <p>
+        Versão do tasker: 6.2.22
+      </p>
+      <p>
+        Versão do android: 13
+      </p>
+      <p>
+        Root: não
+      </p>
+      <p>
+        Autor: x-mrrobot-x
+      </p>
+    </section>
+
+    <section id="description">
+      <h2>DESCRIÇÃO</h2>
+
+      <p>
+        Monitore e visualize informações sobre o tempo de utilização do dispositivo. Monitore o tempo total de uso, os horários de ativação e desativação da tela, a quantidade de desbloqueios diários, e através de um gráfico, compare os dados de vários dias.
+      </p>
+    </section>
+
+    <section id="resources">
+      <h2>RECURSOS</h2>
+
+      <ul>
+        <li>
+          <p>
+            Tempo total de uso do dispositivo.
+          </p>
+        </li>
+        <li>
+          <p>
+            Horários de ativação e desativação da Tela.
+          </p>
+        </li>
+        <li>
+          <p>
+            Quantidade de desbloqueios diários.
+          </p>
+        </li>
+        <li>
+          <p>
+            Intensidade de horas de uso com cores indicativas.
+          </p>
+        </li>
+        <li>
+          <p>
+            Gráfico comparativo com dados de vários dias.
+          </p>
+        </li>
+        <li>
+          <p>
+            Notificações com resumos diários atualizáveis.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="how-to-use">
+      <h2>COMO USAR</h2>
+
+      <div class="flex">
+        <p>
+          Execute a tarefa:
+        </p>
+        <span class="highlight">SUS 01 - MAIN</span>
+      </div>
+    </section>
+
+    <section id="tasks">
+      <h2>TAREFAS EXECUTÁVEIS</h2>
+      <ul>
+        <li>
+          <h3 data-untranslatable>SUS 01 - MAIN</h3>
+          <p>
+            Exibe cena com informações de uso da tela.
+          </p>
+        </li>
+        <li>
+          <h3 data-untranslatable>SUS 05 - SETTINGS</h3>
+          <p>
+            Permite configurar variáveis do projeto.
+          </p>
+
+          <ul class="variables">
+            <li>
+              <h4 data-untranslatable>%project_path</h4>
+              <p>
+                Contém o caminho do diretório onde ficarão salvos os arquivos do projeto.
+              </p>
+            </li>
+            <li>
+              <h4 data-untranslatable>%file_path</h4>
+              <p>
+                Contém o caminho do arquivo com dados de uso.
+              </p>
+            </li>
+            <li>
+              <h4 data-untranslatable>%Settings</h4>
+              <p>
+                Contém configurações compartilhadas entre o projeto e o javascript da cena.
+              </p>
+            </li>
+            <li>
+              <h4 data-untranslatable>%my_lang_code</h4>
+              <p>
+                Recebe automaticamente a língua selecionado pelo usuário.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3 data-untranslatable>SUS 10 - IMPORT / EXPORT DATA</h3>
+          <p>
+            Permite escolher entre importar ou exportar dados de uso do projeto.
+          </p>
+        </li>
+        <li>
+          <h3 data-untranslatable>SUS 12 - SET YOUR LANGUAGE</h3>
+          <p>
+            Permite escolher o seu idioma.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="profiles">
+      <h2>PERFIS</h2>
+      <ul>
+        <li>
+          <h3 data-untranslatable>SUS 1 - ALTERNATE SCREEN</h3>
+          <p>
+            Detecta quando a tela é ligada e desligada para realizar os cálculos e gerar as informações de uso da tela.
+          </p>
+        </li>
+        <li>
+          <h3 data-untranslatable>SUS 2 - UPDATE NOTIFICATION</h3>
+          <p>
+            Atualiza notificação com dados de uso diário a cada 5 minutos.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="changelog">
+      <h2>CHANGELOG</h2>
+
+      <ul>
+        <li class="flex">
+          <span class="highlight">V1</span>
+          <p>
+            Projeto inicial.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="c-footer"></footer>
+</body>
+</html>

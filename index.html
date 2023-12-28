@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/alert.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/environment.js" defer></script>
+  <script src="/js/themes.js" defer></script>
+  <script src="/js/data.js" defer></script>
+  <script src="/js/variables.js" defer></script>
+  <script src="/js/utils.js" defer></script>
+  <script src="/js/screen-time-today.js" defer></script>
+  <script src="/js/api.js" defer></script>
+  <script src="/js/chart.js" defer></script>
+  <script src="/js/rendering.js" defer></script>
+  <script src="/js/events.js" defer></script>
+  <script src="/js/main.js" defer></script>
+  
+  <title>Screen Usage Stats</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="c-header">
+    <div class="c-header__container max-width">
+      <!-- TITLE -->
+      <section class="c-header__title">
+        <label class="c-header__menu">
+          <input type="checkbox" data-menu-toggle>
+          <span></span>
+        </label>
+
+        <section class="c-sidebar__overlay" data-sidebar-overlay>
+          <aside class="c-sidebar">
+            <aside>
+            </section>
+
+            <h1>SCREEN USAGE STATS</h1>
+
+            <div class="c-header__theme dark" data-theme-switch>
+              <div class="c-header__theme__bg">
+                <div class="c-header__theme__icon"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- GREETING -->
+          <section class="c-header__greeting">
+            <h2 data-greeting>...</h2>
+
+            <div class="c-select__language__wrapper">
+              <select class="c-select__language" data-select-language>
+                <option value="pt" selected>Portuguese</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">Franch</option>
+                <option value="ru">Russian</option>
+              </select>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="c-main max-width">
+        <!-- TIME TODAY -->
+        <section class="c-time_today">
+          <p>
+            Tempo de tela hoje
+          </p>
+          <h2 data-time-today data-untranslatable>
+            00h 00m
+          </h2>
+        </section>
+
+        <!-- GRAPH -->
+        <section class="c-graph" data-graph>
+          <canvas class="c-graph__canvas" data-canvas></canvas>
+        </section>
+
+        <!-- CARDS -->
+        <ul class="c-cards" data-cards></ul>
+
+        <!-- FOOTER -->
+        <footer class="c-footer">
+          <p data-untranslatable>
+            © SCREEN USAGE STATS - 2023
+          </p>
+        </footer>
+      </main>
+
+      <!-- ALERT -->
+      <section class="c-alert__overlay" data-alert="overlay">
+        <div class="c-alert">
+          <h3 data-alert="date">Deseja mesmo apagar os dados do dia 00/00/00?</h3>
+        </p>
+
+        <div class="buttons">
+          <button data-alert="cancel">
+            <p>
+              Cancelar
+            </p>
+          </button>
+          <button data-alert="continue">
+            <p>
+              Continuar
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
