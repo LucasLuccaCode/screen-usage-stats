@@ -2,6 +2,8 @@
 
 Monitore e visualize informações sobre o tempo de utilização do dispositivo. Monitore o tempo total de uso, os horários de ativação e desativação da tela, a quantidade de desbloqueios diários, e através de um gráfico, compare os dados de vários dias.
 
+![Preview](https://github.com/LucasLuccaCode/screen-usage-stats/blob/main/.github/preview.png)
+
 ## Tecnologias Utilizadas
 
 - HTML5
@@ -24,13 +26,13 @@ Monitore e visualize informações sobre o tempo de utilização do dispositivo.
 1. Faça o download ou clone este repositório.
 
 ```bash
-git clone git@github.com:LucasLuccaCode/tasker-projects.git
+git clone git@github.com:LucasLuccaCode/screen-usage-stats.git
 ```
 
 2. Acesse a pasta do projeto:
 
 ```bash
-cd "tasker-projects/Screen Usage Stats"
+cd "screen-usage-stats"
 ```
 
 3. Abra o arquivo `index.html` em um navegador web.
