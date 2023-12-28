@@ -4,7 +4,7 @@ Monitore e visualize informações sobre o tempo de utilização do dispositivo.
 
 ![Preview](https://github.com/LucasLuccaCode/screen-usage-stats/blob/main/.github/preview.png)
 
-## Tecnologias Utilizadas
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -21,7 +21,9 @@ Monitore e visualize informações sobre o tempo de utilização do dispositivo.
 - Gráfico comparativo com dados de vários dias.
 - Notificações com resumos diários atualizáveis.
 
-## Como Usar
+## Como usar
+
+### Versão web
 
 1. Faça o download ou clone este repositório.
 
@@ -37,6 +39,13 @@ cd "screen-usage-stats"
 
 3. Abra o arquivo `index.html` em um navegador web.
 
+### Versão usando o Tasker
+
+O Tasker é uma poderosa aplicação de automação para dispositivos Android, permitindo que os usuários personalizem e automatizem uma variedade de tarefas em seus smartphones.
+
+- Para instalar o aplicativo Tasker a partir da google play [clique aqui](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm).
+- Para baixar o projeto dessa aplição funcional para rodar no tasker [clique aqui](https://taskernet.com/shares/?user=AS35m8k%2FEQCE%2BJiPvkN1cJcjBE7Yh%2B%2Fa8zZeifxINYS7E94XnS26HrYYgsweBVnbf2VB9WJdrS5k&id=Project%3ASCREEN+USAGE+STATS).
+
 ## Contribuição
 
-Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades.-
